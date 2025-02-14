@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: event_bronze
+    database: EVENT_DATA  
+    schema: BRONZE  
+    tables:
+      - name: EVENTS
+      - name: ATTENDEES
+      - name: ORDERS
