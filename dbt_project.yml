@@ -17,9 +17,9 @@ clean-targets:
 
 models:
   dbt_event:
-    silver:
-      +schema: silver
+    staging:
+      +schema: staging
       +materialized: table
-    gold:
-        +schema: gold
+    mart_marketing:
+        +schema: mart_marketing
         +materialized: table

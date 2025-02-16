@@ -1,4 +1,4 @@
-{{ config(schema='gold') }}
+{{ config(schema='mart_marketing') }}
 SELECT 
 ORDER_ID,
 EVENT_ID,

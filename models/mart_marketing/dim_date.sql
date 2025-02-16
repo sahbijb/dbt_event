@@ -1,4 +1,4 @@
-{{ config(schema='gold') }}
+{{ config(schema='mart_marketing') }}
 
 WITH RECURSIVE DateGenerator AS (
     SELECT 

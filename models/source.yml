@@ -1,9 +1,9 @@
 version: 2
 
 sources:
-  - name: event_bronze
-    database: EVENT_DATA  
-    schema: BRONZE  
+  - name: raw_data
+    database: CORPSYS_DATA  
+    schema: raw  
     tables:
       - name: EVENTS
       - name: ATTENDEES
