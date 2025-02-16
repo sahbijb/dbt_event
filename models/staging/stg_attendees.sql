@@ -6,4 +6,4 @@ EMAIL,
 TRIM(address:city,'"') as CITY,
 TRIM(address:country,'"') as COUNTRY,
 TRIM(address:postal_code,'"') as POSTAL_CODE
-from {{ source('event_raw', 'ATTENDEES') }}
+from {{ source('raw_data', 'ATTENDEES') }}

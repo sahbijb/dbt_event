@@ -5,4 +5,4 @@ NAME,
 CITY,
 COUNTRY,
 EVENT_DATE
-from {{ ref('events') }}
+from {{ ref('stg_events') }}

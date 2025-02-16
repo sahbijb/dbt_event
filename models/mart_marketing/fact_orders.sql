@@ -9,4 +9,4 @@ CASE
     ELSE AMOUNT
 END AS AMOUNT,
 ORDER_DATE
-from {{ ref('orders') }}
+from {{ ref('stg_orders') }}

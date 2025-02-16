@@ -1,9 +1,9 @@
 
-name: 'dbt_event'
+name: 'dbt_project'
 version: '1.0.0'
 dbt-cloud:
     project-id: 70471823429720
-profile: 'dbt_event'
+profile: 'dbt_project'
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
@@ -16,7 +16,7 @@ clean-targets:
   - "dbt_packages"
 
 models:
-  dbt_event:
+  dbt_project:
     staging:
       +schema: staging
       +materialized: table

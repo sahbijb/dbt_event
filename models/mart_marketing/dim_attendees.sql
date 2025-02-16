@@ -5,4 +5,4 @@ NAME,
 CITY,
 COUNTRY,
 POSTAL_CODE
-from {{ ref('attendees') }}
+from {{ ref('stg_attendees') }}

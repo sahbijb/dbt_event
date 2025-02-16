@@ -6,4 +6,4 @@ ATTENDEE_ID,
 AMOUNT,
 CURRENCY,
 TO_DATE(ORDER_DATE) AS ORDER_DATE
-from {{ source('event_raw', 'ORDERS') }}
+from {{ source('raw_data', 'ORDERS') }}
