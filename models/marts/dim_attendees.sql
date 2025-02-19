@@ -1,4 +1,4 @@
-{{ config(schema='mart_marketing') }}
+{{ config(schema='marts') }}
 SELECT 
 ATTENDEE_ID,
 NAME,

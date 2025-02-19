@@ -1,20 +1,20 @@
-{{ config(schema='mart_marketing') }}
+{{ config(schema='marts') }}
 
 WITH RECURSIVE DateGenerator AS (
-    SELECT 
+    SELECT
         DATE('2020-01-01') AS DateValue
     UNION ALL
-    SELECT 
+    SELECT
         DateValue + INTERVAL '1 DAY'
-    FROM 
+    FROM
         DateGenerator
-    WHERE 
+    WHERE
         DateValue + INTERVAL '1 DAY' < DATE('2100-01-01')
 )
-SELECT 
+SELECT
     DateValue AS Date,
     EXTRACT(YEAR FROM DateValue) AS Year,
     EXTRACT(MONTH FROM DateValue) AS Month,
     EXTRACT(DAY FROM DateValue) AS Day
-FROM 
+FROM
     DateGenerator

@@ -20,6 +20,6 @@ models:
     staging:
       +schema: staging
       +materialized: table
-    mart_marketing:
-        +schema: mart_marketing
+    marts:
+        +schema: marts
         +materialized: table

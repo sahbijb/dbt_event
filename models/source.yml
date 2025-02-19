@@ -8,3 +8,6 @@ sources:
       - name: EVENTS
       - name: ATTENDEES
       - name: ORDERS
+      - name: EXPENSES
+      - name: APPROVAL_STAGES
+      - name: EMPLOYEES

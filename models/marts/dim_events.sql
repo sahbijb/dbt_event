@@ -1,4 +1,4 @@
-{{ config(schema='mart_marketing') }}
+{{ config(schema='marts') }}
 SELECT 
 EVENT_ID,
 NAME,
