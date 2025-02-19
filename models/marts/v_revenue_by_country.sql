@@ -1,4 +1,4 @@
-{{ config(schema='mart_marketing', materialized = 'view') }}
+{{ config(schema='marts', materialized = 'view') }}
 
 SELECT e.country, SUM(f.amount) AS total_revenue
 FROM  {{ ref('fact_orders') }} f
